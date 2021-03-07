@@ -4,6 +4,6 @@ services:
     container_name: plasm
     hostname: plasm
     command: /opt/plasm --validator --name "rafael" --rpc-cors all
-    build: /data/plasm/build
+    build: ./
     volumes:
-       - /data/plasm/root/.local:/root/.local
+       - ./root/:/root/
