@@ -5,5 +5,7 @@ services:
     hostname: plasm
     command: /opt/plasm --validator --name "rafael" --rpc-cors all
     build: ./
+    ports:
+       - "443:443"
     volumes:
        - ./root/:/root/
