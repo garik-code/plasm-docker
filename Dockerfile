@@ -10,6 +10,6 @@ RUN echo $TZ > /etc/timezone && \
     ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 RUN ntpq -p
-RUN cd /opt && wget https://github.com/PlasmNetwork/Plasm/releases/download/v1.8.0-dusty/plasm-1.8.0-ubuntu-x86_64.tar.gz && \
+RUN cd /opt && wget https://github.com/PlasmNetwork/Plasm/releases/download/v1.9.0-dusty/plasm-1.9.0-ubuntu-x86_64.tar.gz && \
                tar -xf plasm-1.8.0-ubuntu-x86_64.tar.gz
 CMD /opt/plasm
